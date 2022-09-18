@@ -19,8 +19,8 @@ function Experience() {
                     <Col lg={10}>
                         <Card.Body>
                             <Card.Title>IBM</Card.Title>
-                            <Card.Text>Cambridge, MA</Card.Text>
-                            <Card.Text>Associate Software Developer <br /> February 2022 - Present </Card.Text>
+                            <Card.Text>Cambridge, MA <br /> February 2022 - Present</Card.Text>
+                            <Card.Text>Associate Software Developer </Card.Text>
                             <Button style={{ float: "right" }}
                                 onClick={() => setOpen(!open)}
                                 aria-controls="UMass-Lowell-Text"
@@ -46,8 +46,8 @@ function Experience() {
                     <Col lg={10}>
                         <Card.Body>
                             <Card.Title>JPMorgan Chase & Co.</Card.Title>
-                            <Card.Text>Plano, TX</Card.Text>
-                            <Card.Text>Software Engineer Intern <br /> June 2021 - August 2021</Card.Text>
+                            <Card.Text>Plano, TX <br /> June 2021 - August 2021</Card.Text>
+                            <Card.Text>Software Engineer Intern</Card.Text>
                             <Button style={{ float: "right" }}
                                 onClick={() => setOpen(!open)}
                                 aria-controls="UMass-Lowell-Text"
@@ -73,8 +73,8 @@ function Experience() {
                     <Col lg={10}>
                         <Card.Body>
                             <Card.Title>Fidelity Investments</Card.Title>
-                            <Card.Text>Merrimack, NH</Card.Text>
-                            <Card.Text>Software Engineer Intern <br /> June 2020 - August 2020</Card.Text>
+                            <Card.Text>Merrimack, NH <br /> June 2020 - August 2020</Card.Text>
+                            <Card.Text>Software Engineer Intern</Card.Text>
                             <Button style={{ float: "right" }}
                                 onClick={() => setOpen(!open)}
                                 aria-controls="UMass-Lowell-Text"
@@ -100,8 +100,8 @@ function Experience() {
                     <Col lg={10}>
                         <Card.Body>
                             <Card.Title>Philips</Card.Title>
-                            <Card.Text>Andover, MA</Card.Text>
-                            <Card.Text>Software Engineer Co-op <br />June 2019 - December 2019</Card.Text>
+                            <Card.Text>Andover, MA  <br />June 2019 - December 2019</Card.Text>
+                            <Card.Text>Software Engineer Co-op</Card.Text>
                             <Button style={{ float: "right" }}
                                 onClick={() => setOpen(!open)}
                                 aria-controls="UMass-Lowell-Text"

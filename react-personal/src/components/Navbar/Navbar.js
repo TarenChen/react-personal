@@ -5,7 +5,7 @@ import "../Navbar/Navbar.css"
 
 function HomePageNavBar() {
     return (
-        <Navbar bg="transparent" expand="lg">
+        <Navbar bg="transparent" expand="lg" sticky='top'>
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
