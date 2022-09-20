@@ -3,7 +3,7 @@ import Education from '../Education/Education'
 import Experience from '../Experience/Experience'
 import Project from '../Project/Project'
 import About from '../About/About'
-import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 import ReactTypingEffect from 'react-typing-effect';
 import Card from 'react-bootstrap/Card';
 import "./Homepage.css"
@@ -31,9 +31,10 @@ class Homepage extends React.Component {
         </Container>
       </div >
       <About />
-      <Education id="education" />
+      <Education />
       <Experience />
       <Project />
+      <Footer />
 
     </>
   }

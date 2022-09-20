@@ -1,126 +1,167 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
+import Accordion from 'react-bootstrap/Accordion';
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import { Container, CardGroup, Card, Row, Col } from 'react-bootstrap';
 import './Experience.css';
 
 
 function Experience() {
-    const [open, setOpen] = useState(false);
+    function CustomToggle({ children, eventKey }) {
+        const decoratedOnClick = useAccordionButton(eventKey, () =>
+            console.log('totally custom!'),
+        );
+
+        return (
+            <Button
+                type="button"
+                style={{ float: "right" }}
+                onClick={decoratedOnClick}
+                variant="outline-dark"
+            >
+                {children}
+            </Button>
+        );
+    }
     return <section id="experience">
         <Container>
-            <h1>EXPERIENCES</h1>
+            <h1 style={{ color: "#343a40" }}>EXPERIENCES</h1>
             <hr></hr>
-            <Card className="Card" style={{ border: "none" }}>
-                <Row>
-                    <Col lg={2}>
-                        <Card.Img src={require('../../pictures/ibm.png')} />
-                    </Col>
-                    <Col lg={10}>
-                        <Card.Body>
-                            <Card.Title>IBM</Card.Title>
-                            <Card.Text>Cambridge, MA <br /> February 2022 - Present</Card.Text>
-                            <Card.Text>Associate Software Developer </Card.Text>
-                            <Button style={{ float: "right" }}
-                                onClick={() => setOpen(!open)}
-                                aria-controls="UMass-Lowell-Text"
-                                aria-expanded={open}
-                                variant="outline-dark"
-                            >
-                                See more
-                            </Button>
-                            <Collapse in={open}>
-                                <div id="UMass-Lowell-Text">
-                                    <Card.Text><strong>Teaching Assistant</strong><br />Tutored and graded Computing 1 students</Card.Text>
-                                </div>
-                            </Collapse>
-                        </Card.Body>
-                    </Col>
-                </Row>
-            </Card>
-            <Card className="Card" style={{ border: "none" }}>
-                <Row>
-                    <Col lg={2}>
-                        <Card.Img src={require('../../pictures/jpmorgan.jpg')} />
-                    </Col>
-                    <Col lg={10}>
-                        <Card.Body>
-                            <Card.Title>JPMorgan Chase & Co.</Card.Title>
-                            <Card.Text>Plano, TX <br /> June 2021 - August 2021</Card.Text>
-                            <Card.Text>Software Engineer Intern</Card.Text>
-                            <Button style={{ float: "right" }}
-                                onClick={() => setOpen(!open)}
-                                aria-controls="UMass-Lowell-Text"
-                                aria-expanded={open}
-                                variant="outline-dark"
-                            >
-                                See more
-                            </Button>
-                            <Collapse in={open}>
-                                <div id="UMass-Lowell-Text">
-                                    <Card.Text><strong>Teaching Assistant</strong><br />Tutored and graded Computing 1 students</Card.Text>
-                                </div>
-                            </Collapse>
-                        </Card.Body>
-                    </Col>
-                </Row>
-            </Card>
-            <Card className="Card" style={{ border: "none" }}>
-                <Row>
-                    <Col lg={2}>
-                        <Card.Img src={require('../../pictures/fidelity.jpg')} />
-                    </Col>
-                    <Col lg={10}>
-                        <Card.Body>
-                            <Card.Title>Fidelity Investments</Card.Title>
-                            <Card.Text>Merrimack, NH <br /> June 2020 - August 2020</Card.Text>
-                            <Card.Text>Software Engineer Intern</Card.Text>
-                            <Button style={{ float: "right" }}
-                                onClick={() => setOpen(!open)}
-                                aria-controls="UMass-Lowell-Text"
-                                aria-expanded={open}
-                                variant="outline-dark"
-                            >
-                                See more
-                            </Button>
-                            <Collapse in={open}>
-                                <div id="UMass-Lowell-Text">
-                                    <Card.Text><strong>Teaching Assistant</strong><br />Tutored and graded Computing 1 students</Card.Text>
-                                </div>
-                            </Collapse>
-                        </Card.Body>
-                    </Col>
-                </Row>
-            </Card>
-            <Card className="Card" style={{ border: "none" }}>
-                <Row>
-                    <Col lg={2}>
-                        <Card.Img src={require('../../pictures/philips.PNG')} />
-                    </Col>
-                    <Col lg={10}>
-                        <Card.Body>
-                            <Card.Title>Philips</Card.Title>
-                            <Card.Text>Andover, MA  <br />June 2019 - December 2019</Card.Text>
-                            <Card.Text>Software Engineer Co-op</Card.Text>
-                            <Button style={{ float: "right" }}
-                                onClick={() => setOpen(!open)}
-                                aria-controls="UMass-Lowell-Text"
-                                aria-expanded={open}
-                                variant="outline-dark"
-                            >
-                                See more
-                            </Button>
-                            <Collapse in={open}>
-                                <div id="UMass-Lowell-Text">
-                                    <Card.Text><strong>Teaching Assistant</strong><br />Tutored and graded Computing 1 students</Card.Text>
-                                </div>
-                            </Collapse>
-                        </Card.Body>
-                    </Col>
-                </Row>
-            </Card>
+            <Accordion>
+                <Card className="Card" style={{ border: "none" }}>
+                    <Row>
+                        <Col lg={2}>
+                            <a style={{ textDecoration: 'none' }} href="https://www.ibm.com/services/ibmix" target="_blank"><Card.Img src={require('../../pictures/ibm.png')} /></a>
+                        </Col>
+                        <Col lg={10}>
+                            <Card.Body>
+                                <Card.Title>IBM</Card.Title>
+                                <Card.Text>Cambridge, MA <br /> February 2022 - Present</Card.Text>
+                                <Card.Text>Associate Software Developer </Card.Text>
+                                <CustomToggle eventKey="0">Learn More</CustomToggle>
+                                <Accordion.Collapse eventKey="0">
+                                    <div>
+                                        <Card.Text><a style={{ textDecoration: 'none' }} href="https://www.ibm.com/services/ibmix" target="_blank">IBM iX®</a> works at the intersection of strategy, design and technology to digitally reinvent your business. We take a human-centered, outcomes-led approach to defining your digital strategy and delivering exceptional customer experiences to build your business, by design.</Card.Text>
+                                        <Card.Text>Contributions:</Card.Text>
+                                        Clients include: Citi, Prudential
+                                        <ul>
+                                            <li>
+                                                Conducted a Due Diligence for CitiBank focusing on their check processing system
+                                            </li>
+                                            <li>
+                                                Created business requirements, gathered system dependencies, and drew functional architecture diagrams
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </Accordion.Collapse>
+                            </Card.Body>
+                        </Col>
+                    </Row>
+                </Card>
+                <Card className="Card" style={{ border: "none" }}>
+                    <Row>
+                        <Col lg={2}>
+                            <a style={{ textDecoration: 'none' }} href="https://www.jpmorganchase.com/" target="_blank"><Card.Img src={require('../../pictures/jpmorgan.jpg')} /></a>
+                        </Col>
+                        <Col lg={10}>
+                            <Card.Body>
+                                <Card.Title>JPMorgan Chase & Co.</Card.Title>
+                                <Card.Text>Plano, TX <br /> June 2021 - August 2021</Card.Text>
+                                <Card.Text>Software Engineer Intern</Card.Text>
+                                <CustomToggle eventKey="1">Learn More</CustomToggle>
+                                <Accordion.Collapse eventKey="1">
+                                    <div>
+                                        <Card.Text><a style={{ textDecoration: 'none' }} href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase & Co.</a> is an American multinational investment bank and financial services holding company. As of 2022, JPMorgan Chase is the largest bank in the United States, the world's largest bank by market capitalization, and the fifth largest bank in the world in terms of total assets, with total assets of US$3.954 trillion. Additionally, JPMorgan Chase is ranked 24th on the Fortune 500 list of the largest United States corporations by total revenue.</Card.Text>
+                                        <Card.Text>Contributions:</Card.Text>
+                                        Line of Business: Global Technogoly Infrastructure - Enterprise Management and Monitoring Services
+                                        <ul>
+                                            <li>
+                                                Created a dashboard using React and Spring Boot (Java) to visualize datastored in an Oracle Database
+                                            </li>
+                                            <li>
+                                                Implemented both the API and user interface that displays Apica and ThousandEyes data in one synthetic monitor
+                                            </li>
+                                            <li>
+                                                Worked in an Agile environment with daily stand-ups and bi-weekly sprint meetings utilizing JIRA for management
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </Accordion.Collapse>
+                            </Card.Body>
+                        </Col>
+                    </Row>
+                </Card>
+                <Card className="Card" style={{ border: "none" }}>
+                    <Row>
+                        <Col lg={2}>
+                            <a style={{ textDecoration: 'none' }} href="https://www.fidelity.com/" target="_blank"><Card.Text><Card.Img src={require('../../pictures/fidelity.jpg')} /></Card.Text></a>
+                        </Col>
+                        <Col lg={10}>
+                            <Card.Body>
+                                <Card.Title>Fidelity Investments</Card.Title>
+                                <Card.Text>Merrimack, NH <br /> June 2020 - August 2020</Card.Text>
+                                <Card.Text>Software Engineer Intern</Card.Text>
+                                <CustomToggle eventKey="2">Learn More</CustomToggle>
+                                <Accordion.Collapse eventKey="2">
+                                    <div>
+                                        <Card.Text> <a style={{ textDecoration: 'none' }} href="https://www.fidelity.com/" target="_blank">Fidelity Investments</a> is an American multinational financial services corporation based in Boston, Massachusetts. The company was established in 1946 and is one of the largest asset managers in the world with $4.5 trillion in assets under management, now as of December 2021 their assets under administration amounts to $11.8 trillion.</Card.Text>
+                                        <Card.Text>Contributions:</Card.Text>
+                                        Line of Business: Enterpise Infrastructure - Market Data
+                                        <ul>
+                                            <li>
+                                                Developed an automated notification feature on AWS that detects application failure and recovery logs for the Market Data team utilizing AWS Tools (MetricsFilter, CloudWatch, Lambdas, SNS)
+
+                                            </li>
+                                            <li>
+                                                Automated email alerts which eliminated time that operations team would spend manually looking for status logs
+                                            </li>
+                                            <li>
+                                                Worked in an Agile environment with daily stand-ups and bi-weekly sprint meetings utilizing JIRA for management
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </Accordion.Collapse>
+                            </Card.Body>
+                        </Col>
+                    </Row>
+                </Card>
+                <Card className="Card" style={{ border: "none" }}>
+                    <Row>
+                        <Col lg={2}>
+                            <a style={{ textDecoration: 'none' }} href="https://www.usa.philips.com/healthcare" target="_blank"><Card.Img src={require('../../pictures/philips.PNG')} /></a>
+                        </Col>
+                        <Col lg={10}>
+                            <Card.Body>
+                                <Card.Title>Philips</Card.Title>
+                                <Card.Text>Andover, MA  <br />June 2019 - December 2019</Card.Text>
+                                <Card.Text>Software Engineer Co-op</Card.Text>
+                                <CustomToggle eventKey="3">Learn More</CustomToggle>
+                                <Accordion.Collapse eventKey="3">
+                                    <div>
+                                        <Card.Text> <a style={{ textDecoration: 'none' }} href="https://www.usa.philips.com/healthcare" target="_blank">Philips</a>, in full Royal Philips NV, major Dutch manufacturer of consumer electronics, electronic components, medical imaging equipment, household appliances, lighting equipment, and computer and telecommunications equipment.</Card.Text>
+                                        <Card.Text>Contributions:</Card.Text>
+                                        Patient Monitoring Devices - Patient Wearable Monitoring
+                                        <ul>
+                                            <li>
+                                                Implemented unit tests in C/C++ with Google Test framework for an embedded patient monitoring medical device
+                                            </li>
+                                            <li>
+                                                Ensured code coverage using GCOV/LCOV, resulting in classes with 100% functional, and 80+% line/branch coverage
+                                            </li>
+                                            <li>
+                                                Flashed system boards, refactored Python smoke test scripts and troubleshooted wlan/cts radio devices
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </Accordion.Collapse>
+                            </Card.Body>
+                        </Col>
+                    </Row>
+                </Card>
+            </Accordion>
         </Container >
-    </section>
+    </section >
 }
 
 
