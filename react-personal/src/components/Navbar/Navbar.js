@@ -9,10 +9,11 @@ function HomePageNavBar() {
         <Navbar bg="black" variant="dark" expand="lg" sticky='top'>
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Brand style={{ fontWeight: "bold" }}>Taren</Navbar.Brand >
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className='m-auto justify-content-center' variant='light'>
                         <Nav.Link style={{ color: "white" }} href="/"><strong>HOME</strong></Nav.Link>
-                        <Nav.Link style={{ color: "white" }} href="/#about"><strong>ABOUT</strong></Nav.Link>
+                        {/* <Nav.Link style={{ color: "white" }} href="/#about"><strong>ABOUT</strong></Nav.Link> */}
                         <Nav.Link style={{ color: "white" }} href="/#education"><strong>EDUCATION</strong></Nav.Link>
                         <Nav.Link style={{ color: "white" }} href="/#experience"><strong>EXPERIENCES</strong></Nav.Link>
                         <Nav.Link style={{ color: "white" }} href="/#project"><strong>PROJECTS</strong></Nav.Link>

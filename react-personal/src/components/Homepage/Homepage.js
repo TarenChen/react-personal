@@ -15,9 +15,9 @@ class Homepage extends React.Component {
     return <>
       <div className='backgroundHomePage' >
         <Container>
-          <Card className="noBorder" bg="transparent" style={{ display: "flex", alignItems: "center", justifyContent: "center", paddingTop: "3rem", border: "none" }}>
+          <Card className="noBorder" bg="transparent" style={{ display: "flex", alignItems: "center", justifyContent: "center", paddingTop: "6rem", border: "none" }}>
             <ReactTypingEffect style={{ fontWeight: "bold" }}
-              text={["print(\"Welcome! I'm Taren :)\")", "Welcome! I'm Taren :)"]}
+              text={["Hello, I'm Taren", "Welcome :)"]}
               cursorRenderer={cursor => <h2 style={{ color: "white" }}>{cursor}</h2>}
               speed={(125)}
               eraseSpeed={(50)}
