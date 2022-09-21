@@ -1,9 +1,25 @@
 .backgroundHomePage {
-    background-image: url('../../pictures/mountainCentered.jpeg');
+    background-image: url('../../pictures/taren.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-width: 100%;
     height: 950px;
 
+}
+
+h2 {
+    color: green;
+    font-family: monospace;
+}
+
+@media screen and (max-width: 767px) {
+    .backgroundHomePage {
+        background-image: url('../../pictures/smallertaren.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-width: 100%;
+        height: 950px;
+    }
 }

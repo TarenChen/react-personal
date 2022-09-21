@@ -2,10 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "../Navbar/Navbar.css"
+import "../Footer/Footer.css"
 
 function HomePageNavBar() {
     return (
-        <Navbar bg="dark" expand="lg" sticky='top'>
+        <Navbar bg="black" variant="dark" expand="lg" sticky='top'>
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

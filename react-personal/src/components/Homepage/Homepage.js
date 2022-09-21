@@ -2,7 +2,7 @@ import React from 'react';
 import Education from '../Education/Education'
 import Experience from '../Experience/Experience'
 import Project from '../Project/Project'
-import About from '../About/About'
+// import About from '../About/About'
 import Footer from '../Footer/Footer'
 import ReactTypingEffect from 'react-typing-effect';
 import Card from 'react-bootstrap/Card';
@@ -17,20 +17,22 @@ class Homepage extends React.Component {
         <Container>
           <Card className="noBorder" bg="transparent" style={{ display: "flex", alignItems: "center", justifyContent: "center", paddingTop: "3rem", border: "none" }}>
             <ReactTypingEffect style={{ fontWeight: "bold" }}
-              text={["print(\"Hello World\")", "I'm Taren!", "Welcome :)"]}
-              cursorRenderer={cursor => <h1>{cursor}</h1>}
+              text={["print(\"Welcome! I'm Taren :)\")", "Welcome! I'm Taren :)"]}
+              cursorRenderer={cursor => <h2 style={{ color: "white" }}>{cursor}</h2>}
+              speed={(125)}
+              eraseSpeed={(50)}
               displayTextRenderer={(text) => {
                 return (
-                  <h1 style={{ textAlign: "center", fontWeight: "bold" }}>
+                  <h2 style={{ textAlign: "center", fontWeight: "bold" }}>
                     {text}
-                  </h1>
+                  </h2>
                 );
               }}
             />
           </Card>
         </Container>
       </div >
-      <About />
+      {/* <About /> */}
       <Education />
       <Experience />
       <Project />
