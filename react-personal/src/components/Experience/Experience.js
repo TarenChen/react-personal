@@ -32,15 +32,48 @@ function Experience() {
                 <Card className="Card" style={{ border: "none" }}>
                     <Row>
                         <Col lg={2}>
+                            <a style={{ textDecoration: 'none' }} href="https://www.jpmorganchase.com/" target="_blank"><Card.Img src={require('../../pictures/jpmorgan.jpg')} /></a>
+                        </Col>
+                        <Col lg={10}>
+                            <Card.Body>
+                                <Card.Title>JPMorgan Chase & Co.</Card.Title>
+                                <Card.Text>Plano, TX <br /> January 2023 - Present</Card.Text>
+                                <Card.Text>Senior Associate Software Engineer</Card.Text>
+                                <CustomToggle eventKey="4">Learn More</CustomToggle>
+                                <Accordion.Collapse eventKey="4">
+                                    <div>
+                                        <Card.Text><a style={{ textDecoration: 'none' }} href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase & Co.</a> is an American multinational investment bank and financial services holding company. As of 2022, JPMorgan Chase is the largest bank in the United States, the world's largest bank by market capitalization, and the fifth largest bank in the world in terms of total assets, with total assets of US$3.954 trillion. Additionally, JPMorgan Chase is ranked 24th on the Fortune 500 list of the largest United States corporations by total revenue.</Card.Text>
+                                        <Card.Text>Contributions:</Card.Text>
+                                        Line of Business: Consumer & Cummunity Bank (CCB)
+                                        {/* <ul>
+                                            <li>
+                                                Created a dashboard using React and Spring Boot (Java) to visualize datastored in an Oracle Database
+                                            </li>
+                                            <li>
+                                                Implemented both the API and user interface that displays Apica and ThousandEyes data in one synthetic monitor
+                                            </li>
+                                            <li>
+                                                Worked in an Agile environment with daily stand-ups and bi-weekly sprint meetings utilizing JIRA for management
+                                            </li>
+                                        </ul> */}
+                                    </div>
+                                </Accordion.Collapse>
+                            </Card.Body>
+                        </Col>
+                    </Row>
+                </Card>
+                <Card className="Card" style={{ border: "none" }}>
+                    <Row>
+                        <Col lg={2}>
                             <a style={{ textDecoration: 'none' }} href="https://www.ibm.com/services/ibmix" target="_blank"><Card.Img src={require('../../pictures/ibm.png')} /></a>
                         </Col>
                         <Col lg={10}>
                             <Card.Body>
                                 <Card.Title>IBM</Card.Title>
-                                <Card.Text>Cambridge, MA <br /> February 2022 - Present</Card.Text>
+                                <Card.Text>Manhattan, NY / Cambridge, MA <br /> February 2022 - January 2023</Card.Text>
                                 <Card.Text>Associate Software Developer </Card.Text>
-                                <CustomToggle eventKey="0">Learn More</CustomToggle>
-                                <Accordion.Collapse eventKey="0">
+                                <CustomToggle eventKey="3">Learn More</CustomToggle>
+                                <Accordion.Collapse eventKey="3">
                                     <div>
                                         <Card.Text><a style={{ textDecoration: 'none' }} href="https://www.ibm.com/services/ibmix" target="_blank">IBM iX®</a> works at the intersection of strategy, design and technology to digitally reinvent your business. We take a human-centered, outcomes-led approach to defining your digital strategy and delivering exceptional customer experiences to build your business, by design.</Card.Text>
                                         <Card.Text>Contributions:</Card.Text>
@@ -69,8 +102,8 @@ function Experience() {
                                 <Card.Title>JPMorgan Chase & Co.</Card.Title>
                                 <Card.Text>Plano, TX <br /> June 2021 - August 2021</Card.Text>
                                 <Card.Text>Software Engineer Intern</Card.Text>
-                                <CustomToggle eventKey="1">Learn More</CustomToggle>
-                                <Accordion.Collapse eventKey="1">
+                                <CustomToggle eventKey="2">Learn More</CustomToggle>
+                                <Accordion.Collapse eventKey="2">
                                     <div>
                                         <Card.Text><a style={{ textDecoration: 'none' }} href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase & Co.</a> is an American multinational investment bank and financial services holding company. As of 2022, JPMorgan Chase is the largest bank in the United States, the world's largest bank by market capitalization, and the fifth largest bank in the world in terms of total assets, with total assets of US$3.954 trillion. Additionally, JPMorgan Chase is ranked 24th on the Fortune 500 list of the largest United States corporations by total revenue.</Card.Text>
                                         <Card.Text>Contributions:</Card.Text>
@@ -102,8 +135,8 @@ function Experience() {
                                 <Card.Title>Fidelity Investments</Card.Title>
                                 <Card.Text>Merrimack, NH <br /> June 2020 - August 2020</Card.Text>
                                 <Card.Text>Software Engineer Intern</Card.Text>
-                                <CustomToggle eventKey="2">Learn More</CustomToggle>
-                                <Accordion.Collapse eventKey="2">
+                                <CustomToggle eventKey="1">Learn More</CustomToggle>
+                                <Accordion.Collapse eventKey="1">
                                     <div>
                                         <Card.Text> <a style={{ textDecoration: 'none' }} href="https://www.fidelity.com/" target="_blank">Fidelity Investments</a> is an American multinational financial services corporation based in Boston, Massachusetts. The company was established in 1946 and is one of the largest asset managers in the world with $4.5 trillion in assets under management, now as of December 2021 their assets under administration amounts to $11.8 trillion.</Card.Text>
                                         <Card.Text>Contributions:</Card.Text>
@@ -114,8 +147,7 @@ function Experience() {
 
                                             </li>
                                             <li>
-                                                Automated email alerts which eliminated time that operations team would spend manually looking for status logs
-                                            </li>
+                                                Automated email alerts which eliminated the time that operations spend manually looking for status logs                                            </li>
                                             <li>
                                                 Worked in an Agile environment with daily stand-ups and bi-weekly sprint meetings utilizing JIRA for management
                                             </li>
@@ -134,10 +166,10 @@ function Experience() {
                         <Col lg={10}>
                             <Card.Body>
                                 <Card.Title>Philips</Card.Title>
-                                <Card.Text>Andover, MA  <br />June 2019 - December 2019</Card.Text>
+                                <Card.Text>Boston, MA  <br />June 2019 - December 2019</Card.Text>
                                 <Card.Text>Software Engineer Co-op</Card.Text>
-                                <CustomToggle eventKey="3">Learn More</CustomToggle>
-                                <Accordion.Collapse eventKey="3">
+                                <CustomToggle eventKey="0">Learn More</CustomToggle>
+                                <Accordion.Collapse eventKey="0">
                                     <div>
                                         <Card.Text> <a style={{ textDecoration: 'none' }} href="https://www.usa.philips.com/healthcare" target="_blank">Philips</a>, in full Royal Philips NV, major Dutch manufacturer of consumer electronics, electronic components, medical imaging equipment, household appliances, lighting equipment, and computer and telecommunications equipment.</Card.Text>
                                         <Card.Text>Contributions:</Card.Text>
