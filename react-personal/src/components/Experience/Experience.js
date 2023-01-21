@@ -44,7 +44,7 @@ function Experience() {
                                     <div>
                                         <Card.Text><a style={{ textDecoration: 'none' }} href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase & Co.</a> is an American multinational investment bank and financial services holding company. As of 2022, JPMorgan Chase is the largest bank in the United States, the world's largest bank by market capitalization, and the fifth largest bank in the world in terms of total assets, with total assets of US$3.954 trillion. Additionally, JPMorgan Chase is ranked 24th on the Fortune 500 list of the largest United States corporations by total revenue.</Card.Text>
                                         <Card.Text>Contributions:</Card.Text>
-                                        Line of Business: Consumer & Cummunity Bank (CCB)
+                                        Line of Business: Consumer & Community Banking (CCB)
                                         {/* <ul>
                                             <li>
                                                 Created a dashboard using React and Spring Boot (Java) to visualize datastored in an Oracle Database
