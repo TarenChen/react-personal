@@ -38,11 +38,11 @@ function Experience() {
                             <Card.Body>
                                 <Card.Title>JPMorgan Chase & Co.</Card.Title>
                                 <Card.Text>Plano, TX <br /> January 2023 - Present</Card.Text>
-                                <Card.Text>Senior Associate Software Engineer</Card.Text>
+                                <Card.Text>Software Engineer III</Card.Text>
                                 <CustomToggle eventKey="4">Learn More</CustomToggle>
                                 <Accordion.Collapse eventKey="4">
                                     <div>
-                                        <Card.Text><a style={{ textDecoration: 'none' }} href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase & Co.</a> is an American multinational investment bank and financial services holding company. As of 2022, JPMorgan Chase is the largest bank in the United States, the world's largest bank by market capitalization, and the fifth largest bank in the world in terms of total assets, with total assets of US$3.954 trillion. Additionally, JPMorgan Chase is ranked 24th on the Fortune 500 list of the largest United States corporations by total revenue.</Card.Text>
+                                        <Card.Text><a style={{ textDecoration: 'none' }} href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase & Co.</a> is an American multinational financial services company. It is the largest bank in the United States and the world's largest bank by market capitalization.</Card.Text>
                                         <Card.Text>Contributions:</Card.Text>
                                         Line of Business: Consumer & Community Banking (CCB)
                                         {/* <ul>
@@ -80,10 +80,10 @@ function Experience() {
                                         Clients include: Citi, Prudential
                                         <ul>
                                             <li>
-                                                Conducted a Due Diligence for CitiBank focusing on their check processing system
+                                                Conducted a comprehensive Due Diligence analysis for CitiBank's check processing system, identifying areas for improvement and proposing solutions
                                             </li>
                                             <li>
-                                                Created business requirements, gathered system dependencies, and drew functional architecture diagrams
+                                            Collaborated with stakeholders at CitiBank to gather system dependencies, create business requirements, and develop functional architecture diagrams that accurately represented their system's capabilities and limitations
                                             </li>
                                         </ul>
                                     </div>
@@ -105,18 +105,18 @@ function Experience() {
                                 <CustomToggle eventKey="2">Learn More</CustomToggle>
                                 <Accordion.Collapse eventKey="2">
                                     <div>
-                                        <Card.Text><a style={{ textDecoration: 'none' }} href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase & Co.</a> is an American multinational investment bank and financial services holding company. As of 2022, JPMorgan Chase is the largest bank in the United States, the world's largest bank by market capitalization, and the fifth largest bank in the world in terms of total assets, with total assets of US$3.954 trillion. Additionally, JPMorgan Chase is ranked 24th on the Fortune 500 list of the largest United States corporations by total revenue.</Card.Text>
+                                        <Card.Text><a style={{ textDecoration: 'none' }} href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase & Co.</a> is an American multinational financial services company. It is the largest bank in the United States and the world's largest bank by market capitalization.</Card.Text>
                                         <Card.Text>Contributions:</Card.Text>
                                         Line of Business: Global Technogoly Infrastructure - Enterprise Management and Monitoring Services
                                         <ul>
                                             <li>
-                                                Created a dashboard using React and Spring Boot (Java) to visualize datastored in an Oracle Database
+                                                Developed a dashboard utilizing React and Spring Boot (Java) to present data stored in an Oracle Database, improving data visibility and accessibility
                                             </li>
                                             <li>
-                                                Implemented both the API and user interface that displays Apica and ThousandEyes data in one synthetic monitor
+                                                Designed and implemented an API and user interface to display Apica and ThousandEyes data in a single synthetic monitor, increasing monitoring efficiency and reducing redundancy
                                             </li>
                                             <li>
-                                                Worked in an Agile environment with daily stand-ups and bi-weekly sprint meetings utilizing JIRA for management
+                                            Collaborated in an Agile environment, participating in daily stand-ups and bi-weekly sprint meetings, and utilizing JIRA for efficient project management
                                             </li>
                                         </ul>
                                     </div>
@@ -138,18 +138,18 @@ function Experience() {
                                 <CustomToggle eventKey="1">Learn More</CustomToggle>
                                 <Accordion.Collapse eventKey="1">
                                     <div>
-                                        <Card.Text> <a style={{ textDecoration: 'none' }} href="https://www.fidelity.com/" target="_blank">Fidelity Investments</a> is an American multinational financial services corporation based in Boston, Massachusetts. The company was established in 1946 and is one of the largest asset managers in the world with $4.5 trillion in assets under management, now as of December 2021 their assets under administration amounts to $11.8 trillion.</Card.Text>
+                                        <Card.Text> <a style={{ textDecoration: 'none' }} href="https://www.fidelity.com/" target="_blank">Fidelity Investments</a> is an American multinational financial services corporation based in Boston, Massachusetts. The company was established in 1946 and is one of the largest asset managers in the world with $4.5 trillion in assets under management.</Card.Text>
                                         <Card.Text>Contributions:</Card.Text>
-                                        Line of Business: Enterpise Infrastructure - Market Data
+                                        Line of Business: Enterprise Infrastructure - Market Data
                                         <ul>
                                             <li>
-                                                Developed an automated notification feature on AWS that detects application failure and recovery logs for the Market Data team utilizing AWS Tools (MetricsFilter, CloudWatch, Lambdas, SNS)
-
+                                            Utilized AWS Tools (MetricsFilter, CloudWatch, Lambdas, SNS) to develop an automated notification feature on AWS that detects application failure and recovery logs for the Market Data team
                                             </li>
                                             <li>
-                                                Automated email alerts which eliminated the time that operations spend manually looking for status logs                                            </li>
+                                            Automated email alerts, which eliminated the need for manual tracking of status logs by the operations team, resulting in significant time savings
+                                            </li>
                                             <li>
-                                                Worked in an Agile environment with daily stand-ups and bi-weekly sprint meetings utilizing JIRA for management
+                                            Worked in an Agile environment, attending daily stand-ups and bi-weekly sprint meetings, and utilizing JIRA for project management
                                             </li>
                                         </ul>
                                     </div>
